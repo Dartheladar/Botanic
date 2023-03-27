@@ -1,28 +1,33 @@
-body {
-    background-color: yellowgreen;
+body,
+html {
+    width: 100%;
+    /* height: 100%; */
+    background: yellowgreen;
     font-family: 'Alkatra', cursive;
+  }
+
+body {
+    
+    color: #000000;
+    
 }
 
 h1 {
     text-align: center;
+    font-size: 60px;
 
+}
+h2 {
+    text-align: center;
+    font-size: 40px;
+    
 }
 
 .container {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-columns: 300px 300px 1fr;
-    grid-template-columns: 300px 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-columns: repeat(3, 1fr); /*how many times to repeat what*/
-    grid-template-columns: auto 1fr 1fr; /*auto = max size of content*/
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: repeat(auto-fill, 200px); /*don't care how many columns. Just figure it out for me. show how you can change sizing of page*/
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    justify-items: center;
-    align-items: center;
+    grid-template-rows: 1fr;
 }
 
 img {
@@ -32,9 +37,22 @@ img {
 }
 
 img:hover{
--webkit-transform: scale(1.2);
--ms-transform: scale(1.2);
-transform: scale(1.2);
+-webkit-transform: scale(1.4);
+-ms-transform: scale(1.4);
+transform: scale(1.4);
 transition: 1s ease;
 }
-    
+
+hr {
+    /* not working */
+    max-width: 100%;
+    max-height: 5px;
+    border-width: 3px;
+    border-color: #000000;
+}
+
+
+button {
+    border-radius: 12px;
+    background-color:blueviolet;
+}
