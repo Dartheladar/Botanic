@@ -55,7 +55,6 @@ transition: 1s ease;
 }
 
 hr {
-    /* not working */
     max-width: 100%;
     max-height: 5px;
     border-width: 3px;
